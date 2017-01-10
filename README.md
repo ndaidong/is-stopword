@@ -1,5 +1,5 @@
 # is-stopword
-To check if a word is stopword in English
+To check if a word is [stopword](https://en.wikipedia.org/wiki/Stop_words) in English
 
 [![NPM](https://badge.fury.io/js/is-stopword.svg)](https://badge.fury.io/js/is-stopword)
 [![Build Status](https://travis-ci.org/ndaidong/is-stopword.svg?branch=master)](https://travis-ci.org/ndaidong/is-stopword)
@@ -32,13 +32,9 @@ Return a boolean.
 
 Return an array of the stopwords come from [ranks.nl](http://www.ranks.nl/stopwords).
 
-###### FYI: *What's stopword?*
+###### FYI
 
 > Stop Words are words which do not contain important significance to be used in Search Queries. Usually these words are filtered out from search queries because they return vast amount of unnecessary information.
-
-
-> As [Wikipedia](https://en.wikipedia.org/wiki/Stop_words):
-> In computing, stop words are words which are filtered out before or after processing of natural language data (text).[1] Though stop words usually refer to the most common words in a language, there is no single universal list of stop words used by all natural language processing tools, and indeed not all tools even use such a list. Some tools specifically avoid removing these stop words to support phrase search.
 
 
 ## Test
