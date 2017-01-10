@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "is-stopword",
   "description": "To check if a word is stopword in English",
   "homepage": "https://www.npmjs.com/package/is-stopword",
