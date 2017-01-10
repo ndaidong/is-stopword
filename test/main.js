@@ -26,6 +26,30 @@ test('Test .getStopwords()', (assert) => {
 
 test('Test .isStopword()', (assert) => {
   assert.ok(main.isStopword('accordingly'), '"accordingly" is stopword');
+  assert.ok(main.isStopword('AccoRdingly'), '"AccoRdingly" is stopword');
   assert.ok(!main.isStopword('algolia'), '"algolia" is not stopword');
+  assert.ok(!main.isStopword('Algolia'), '"Algolia" is not stopword');
+
+  assert.throws(
+    () => {
+      main.isStopword();
+    },
+    'It must throw an error if nothing passed into'
+  );
+
+  assert.throws(
+    () => {
+      main.isStopword(12345);
+    },
+    'It must throw error for non-string parameter'
+  );
+
+  assert.throws(
+    () => {
+      main.isStopword('');
+    },
+    'It must throw error if the parameter is empty string'
+  );
+
   assert.end();
 });
