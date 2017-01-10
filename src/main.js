@@ -4,8 +4,9 @@
  **/
 
 var fs = require('fs');
+var path = require('path');
 
-const STOPWORD_FILE = './stopwords.txt';
+const STOPWORD_FILE = path.join(__dirname, './stopwords.txt');
 
 var isString = (val) => {
   return {}.toString.call(val) === '[object String]';
