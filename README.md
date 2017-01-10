@@ -32,6 +32,15 @@ Return a boolean.
 
 Return an array of the stopwords come from [ranks.nl](http://www.ranks.nl/stopwords).
 
+###### FYI: *What's stopword?*
+
+> Stop Words are words which do not contain important significance to be used in Search Queries. Usually these words are filtered out from search queries because they return vast amount of unnecessary information.
+
+
+> As [Wikipedia](https://en.wikipedia.org/wiki/Stop_words):
+> In computing, stop words are words which are filtered out before or after processing of natural language data (text).[1] Though stop words usually refer to the most common words in a language, there is no single universal list of stop words used by all natural language processing tools, and indeed not all tools even use such a list. Some tools specifically avoid removing these stop words to support phrase search.
+
+
 ## Test
 
 ```
