@@ -4,8 +4,6 @@ To check if a word is [stopword](https://en.wikipedia.org/wiki/Stop_words) in En
 [![NPM](https://badge.fury.io/js/is-stopword.svg)](https://badge.fury.io/js/is-stopword)
 [![Build Status](https://travis-ci.org/ndaidong/is-stopword.svg?branch=master)](https://travis-ci.org/ndaidong/is-stopword)
 [![Coverage Status](https://coveralls.io/repos/github/ndaidong/is-stopword/badge.svg?branch=master)](https://coveralls.io/github/ndaidong/is-stopword?branch=master)
-[![Dependency Status](https://gemnasium.com/badges/github.com/ndaidong/is-stopword.svg)](https://gemnasium.com/github.com/ndaidong/is-stopword)
-[![NSP Status](https://nodesecurity.io/orgs/techpush/projects/adfe32ab-aff2-4578-833b-180843d3f427/badge)](https://nodesecurity.io/orgs/techpush/projects/adfe32ab-aff2-4578-833b-180843d3f427)
 
 
 ## Usage
