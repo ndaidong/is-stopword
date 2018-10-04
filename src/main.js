@@ -3,31 +3,33 @@
  * @ndaidong
  **/
 
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs');
+const path = require('path');
 
 const STOPWORD_FILE = path.join(__dirname, './stopwords.txt');
 
-var isString = (val) => {
+const isString = (val) => {
   return {}.toString.call(val) === '[object String]';
 };
 
-var getStopwords = () => {
+const loadStopwords = () => {
   let s = fs.readFileSync(STOPWORD_FILE, 'utf8');
   return s.split('\n');
 };
 
-const STOPWORDS = getStopwords();
+const STOPWORDS = loadStopwords();
 
-var isStopword = (word = '') => {
-  if (!word || !isString(word)) {
-    throw new Error('Parameter must be a non-empty String.');
-  }
-  let w = word.toLowerCase();
-  return STOPWORDS.indexOf(w) !== -1;
+const isStopword = (word = '') => {
+  let w = isString(word) ? word : String(word);
+  let s = w.toLowerCase();
+  return STOPWORDS.indexOf(s) !== -1;
+};
+
+const getStopwords = () => {
+  return [...STOPWORDS];
 };
 
 module.exports = {
   isStopword,
-  getStopwords
+  getStopwords,
 };
